@@ -1,7 +1,7 @@
 FROM node:16.20.2-alpine AS builder
 WORKDIR /app
 COPY . /app
-RUN npm install && npm run build
+RUN npm install
 
 FROM node:alpine AS dev
 
