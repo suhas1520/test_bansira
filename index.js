@@ -1,9 +1,10 @@
 const http = require('http');
-const port = process.env.PORT || 3000;
+require('dotenv').config('./.env')
+const port = process.env.PORT || 3087;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello Node!\n'
+  const msg = process.env.msg
   res.end(msg);
 });
 
