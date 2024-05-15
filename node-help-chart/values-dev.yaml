@@ -1,0 +1,6 @@
+namespace: dev
+
+configmap:
+  data:
+    msg: 'This is on the DEV environment!'
+
