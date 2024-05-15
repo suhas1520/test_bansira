@@ -7,7 +7,7 @@ FROM node:alpine AS dev
 
 WORKDIR /app
 
-COPY --from=builder /app/dist .
+COPY --from=builder /app .
 
 RUN npm install --only=dev
 
